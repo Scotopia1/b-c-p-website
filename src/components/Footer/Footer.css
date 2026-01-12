@@ -15,7 +15,7 @@
   height: 100%;
   color: var(--base-300);
   border-radius: 2rem;
-  padding: 4rem 0;
+  padding: 2rem 0 4rem 0;
 }
 
 .footer .footer-meta .container.footer-meta-header {
@@ -213,7 +213,7 @@
 
 @media (max-width: 600px) {
   .footer .footer-meta {
-    padding: 2rem 0;
+    padding: 1rem 0 2rem 0;
   }
 
   .footer
