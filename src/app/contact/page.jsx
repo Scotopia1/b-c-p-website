@@ -57,7 +57,7 @@ const page = () => {
               </div>
               <div className="contact-img">
                 <img
-                  src="/contact/contact-img.jpg"
+                  src="/contact/contact-1.png"
                   alt="BCP construction team"
                 />
               </div>

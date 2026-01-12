@@ -50,7 +50,7 @@ export const services = [
         description: "We ensure every detail meets your expectations before completion",
       },
     ],
-    image: "/projects/adu-home-renovation-norwood/1.JPG",
+    image: "/projects/new-page-1/image-1.jpg",
     icon: "🏠",
   },
   {
@@ -102,7 +102,7 @@ export const services = [
         description: "Finishing touches and thorough cleanup",
       },
     ],
-    image: "/projects/handicap-bathroom-walpole/1.png",
+    image: "/projects/handicap-accessible-bathroom-walpole-ma/image-1.png",
     icon: "🚿",
   },
   {
@@ -154,7 +154,7 @@ export const services = [
         description: "Final inspection and enjoy your new kitchen",
       },
     ],
-    image: "/projects/kitchen-remodel-norwood/1.png",
+    image: "/projects/gallery-1/image-1.png",
     icon: "🍳",
   },
   {
@@ -206,7 +206,7 @@ export const services = [
         description: "Flooring, paint, and finishing details",
       },
     ],
-    image: "/projects/finished-basement-somerville/3.png",
+    image: "/projects/finished-basement-somerville-ma/image-3.jpg",
     icon: "🎮",
   },
   {
@@ -258,7 +258,7 @@ export const services = [
         description: "Ensure safety and quality before enjoyment",
       },
     ],
-    image: "/projects/custom-deck-norwood/2.png",
+    image: "/projects/new-page/image-2.jpg",
     icon: "🌳",
   },
   {
@@ -310,7 +310,7 @@ export const services = [
         description: "Seamlessly blend new space with existing home",
       },
     ],
-    image: "/projects/front-entrance-canton/1.jpg",
+    image: "/projects/front-entrance-canton-ma/image-1.jpg",
     icon: "🏗️",
   },
 ];
