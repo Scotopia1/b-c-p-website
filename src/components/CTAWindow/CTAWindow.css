@@ -66,33 +66,26 @@
 
 .cta-window .cta-window-hover-hint {
   position: absolute;
-  top: 78%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 2rem;
+  right: 2rem;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 0.75rem;
   color: var(--base-100);
   opacity: 0;
-  transition: opacity 0.4s ease;
+  transform: translate(10px, -10px) rotate(-45deg);
+  transition: opacity 0.4s ease, transform 0.4s ease;
   z-index: 10;
   pointer-events: none;
 }
 
 .cta-window .cta-window-clickable-area:hover .cta-window-hover-hint {
   opacity: 1;
+  transform: translate(0, 0) rotate(-45deg);
 }
 
 .cta-window .cta-window-hover-hint svg {
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
-}
-
-.cta-window .cta-window-hover-hint p {
-  font-size: 1.1rem;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .cta-window .cta-window-header {
@@ -145,7 +138,13 @@
 
 @media (max-width: 1000px) {
   .cta-window .cta-window-hover-hint {
-    top: 40%;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .cta-window .cta-window-hover-hint svg {
+    width: 48px;
+    height: 48px;
   }
 
   .cta-window .cta-window-footer {

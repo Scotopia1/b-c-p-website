@@ -27,12 +27,12 @@ const CTAWindow = ({ img, header, callout, description, href = "/consultation", 
           <div className="cta-window-img-overlay"></div>
           <div className="cta-window-hover-hint">
             <svg
-              width="48"
-              height="48"
+              width="64"
+              height="64"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              strokeWidth="2"
+              strokeWidth="1.5"
               strokeLinecap="round"
               strokeLinejoin="round"
             >
@@ -40,7 +40,6 @@ const CTAWindow = ({ img, header, callout, description, href = "/consultation", 
               <polyline points="12 16 16 12 12 8"></polyline>
               <line x1="8" y1="12" x2="16" y2="12"></line>
             </svg>
-            <p>{ctaLabel}</p>
           </div>
         </a>
         <div className="cta-window-header">

@@ -125,7 +125,7 @@ export default function Home() {
           stagger: 0.1,
           delay: 0.75,
           onStart: () => {
-            gsap.to(".hero-img", { scale: 1, duration: 2, ease: "hop" });
+            gsap.to(".hero-bg img", { scale: 1, duration: 2, ease: "hop" });
           },
           onComplete: () => {
             gsap.set(".loader", { display: "none" });

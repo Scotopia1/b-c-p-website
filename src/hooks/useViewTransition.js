@@ -5,41 +5,46 @@ export const useViewTransition = () => {
   const router = useTransitionRouter();
 
   function slideInOut() {
-    document.documentElement.animate(
-      [
+    try {
+      document.documentElement.animate(
+        [
+          {
+            opacity: 1,
+            transform: "scale(1)",
+          },
+          {
+            opacity: 0,
+            transform: "scale(0.95)",
+          },
+        ],
         {
-          opacity: 1,
-          transform: "scale(1)",
-        },
-        {
-          opacity: 0,
-          transform: " scale(0.5)",
-        },
-      ],
-      {
-        duration: 2000,
-        easing: "cubic-bezier(0.87, 0, 0.13, 1)",
-        fill: "forwards",
-        pseudoElement: "::view-transition-old(root)",
-      }
-    );
+          duration: 800,
+          easing: "cubic-bezier(0.4, 0, 0.2, 1)",
+          fill: "forwards",
+          pseudoElement: "::view-transition-old(root)",
+        }
+      );
 
-    document.documentElement.animate(
-      [
+      document.documentElement.animate(
+        [
+          {
+            clipPath: "circle(0% at 50% 50%)",
+          },
+          {
+            clipPath: "circle(100% at 50% 50%)",
+          },
+        ],
         {
-          clipPath: "circle(0% at 50% 50%)",
-        },
-        {
-          clipPath: "circle(75% at 50% 50%)",
-        },
-      ],
-      {
-        duration: 2000,
-        easing: "cubic-bezier(0.87, 0, 0.13, 1)",
-        fill: "forwards",
-        pseudoElement: "::view-transition-new(root)",
-      }
-    );
+          duration: 800,
+          easing: "cubic-bezier(0.4, 0, 0.2, 1)",
+          fill: "forwards",
+          pseudoElement: "::view-transition-new(root)",
+        }
+      );
+    } catch (err) {
+      // Gracefully handle animation errors
+      console.warn("View transition animation failed:", err);
+    }
   }
 
   const navigateWithTransition = (href, options = {}) => {
@@ -51,10 +56,16 @@ export const useViewTransition = () => {
     // Scroll to top before navigation
     window.scrollTo(0, 0);
 
-    router.push(href, {
-      onTransitionReady: slideInOut,
-      ...options,
-    });
+    try {
+      router.push(href, {
+        onTransitionReady: slideInOut,
+        ...options,
+      });
+    } catch (err) {
+      // Fallback to regular navigation if transition fails
+      console.warn("View transition failed, using fallback:", err);
+      router.push(href);
+    }
   };
 
   return { navigateWithTransition, router };
