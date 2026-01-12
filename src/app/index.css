@@ -269,8 +269,24 @@
 }
 
 @media (max-width: 1000px) {
+  .client-reviews-container {
+    height: 85svh;
+    padding: 2rem 0 1rem 0;
+  }
+
   .client-reviews-container .client-reviews-header-callout {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .client-reviews-container {
+    height: 75svh;
+    padding: 1.5rem 0 1rem 0;
+  }
+
+  .client-reviews-container .client-reviews-header-callout {
+    margin-bottom: 1rem;
   }
 }
 
