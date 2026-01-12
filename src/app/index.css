@@ -196,10 +196,14 @@
 
   .what-we-do .container h1 {
     margin-bottom: 6rem;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     line-height: 1.2;
     letter-spacing: -0.08rem;
     text-align: left;
+  }
+
+  .what-we-do .container h1 .spacer {
+    display: none;
   }
 
   .what-we-do-content {
@@ -219,7 +223,7 @@
 @media (max-width: 600px) {
   .what-we-do .container h1 {
     margin-bottom: 4rem;
-    font-size: 1.75rem;
+    font-size: 1.55rem;
     line-height: 1.25;
     letter-spacing: -0.05rem;
   }
