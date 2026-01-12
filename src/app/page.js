@@ -317,7 +317,7 @@ export default function Home() {
             <Copy delay={0.1}>
               <h1>
                 <span className="spacer">&nbsp;</span>
-                At BCP, we deliver honest, high-quality construction work that homeowners can rely on, backed by clear communication and fair pricing.
+                At&nbsp;BCP, we deliver honest, high-quality construction work that homeowners can rely on, backed by clear communication and fair pricing.
               </h1>
             </Copy>
           </div>
