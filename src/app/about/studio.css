@@ -101,6 +101,7 @@
     align-items: center;
     flex-direction: column;
     gap: 4rem;
+    padding: 4rem 2rem;
   }
 
   .more-facts .fact {
@@ -108,7 +109,43 @@
   }
 
   .more-facts .fact h2 {
-    font-size: 4rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .more-facts .more-facts-items {
+    gap: 3rem;
+    padding: 3rem 1.5rem;
+  }
+
+  .more-facts .fact {
+    gap: 1rem;
+  }
+
+  .more-facts .fact h2 {
+    font-size: 2.25rem;
+  }
+
+  .more-facts .fact p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .more-facts .more-facts-items {
+    gap: 2.5rem;
+    padding: 2rem 1rem;
+  }
+
+  .more-facts .fact h2 {
+    font-size: 1.75rem;
+  }
+
+  .more-facts .fact p {
+    font-size: 0.85rem;
   }
 }
 
