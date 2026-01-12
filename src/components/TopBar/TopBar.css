@@ -1,0 +1,33 @@
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.top-bar .btn {
+  width: 12rem;
+}
+
+.top-bar .top-bar-logo {
+  width: auto;
+  height: 4.5rem;
+}
+
+.top-bar .top-bar-logo img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(1px 1px 2px rgba(255, 255, 255, 0.125));
+}
+
+@media (max-width: 1000px) {
+  .top-bar {
+    padding: 0.5rem 1.5rem;
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "projects": {
+    "kitchen-remodel-norwood": {
+      "category": "kitchen",
+      "images": []
+    },
+    "adu-home-renovation-norwood": {
+      "category": "adu",
+      "images": []
+    },
+    "custom-deck-norwood-1": {
+      "category": "deck",
+      "images": []
+    },
+    "finished-basement-somerville": {
+      "category": "basement",
+      "images": []
+    },
+    "handicap-bathroom-walpole": {
+      "category": "bathroom",
+      "images": []
+    },
+    "bathroom-remodel-norwood-1": {
+      "category": "bathroom",
+      "images": []
+    },
+    "front-entrance-canton": {
+      "category": "addition",
+      "images": []
+    },
+    "custom-deck-norwood-2": {
+      "category": "deck",
+      "images": []
+    },
+    "kitchen-remodel-newton": {
+      "category": "kitchen",
+      "images": []
+    },
+    "finished-basement-dedham": {
+      "category": "basement",
+      "images": []
+    },
+    "bathroom-remodel-dedham": {
+      "category": "bathroom",
+      "images": []
+    },
+    "finished-attic-dedham": {
+      "category": "basement",
+      "images": []
+    },
+    "custom-deck-walpole": {
+      "category": "deck",
+      "images": []
+    },
+    "finished-basement-westwood": {
+      "category": "basement",
+      "images": []
+    },
+    "kitchen-remodel-somerville": {
+      "category": "kitchen",
+      "images": []
+    },
+    "bathroom-remodel-norwood-2": {
+      "category": "bathroom",
+      "images": []
+    },
+    "bay-window-norwood": {
+      "category": "addition",
+      "images": []
+    },
+    "bathroom-remodel-newton-1": {
+      "category": "bathroom",
+      "images": []
+    },
+    "bathroom-remodel-newton-2": {
+      "category": "bathroom",
+      "images": []
+    },
+    "attic-bathroom-mansfield": {
+      "category": "bathroom",
+      "images": []
+    },
+    "double-door-norwood": {
+      "category": "addition",
+      "images": []
+    }
+  },
+  "homepage": {
+    "hero-1": {
+      "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/edd04c7c-4332-4fa6-8ed1-f4fcb3963033/PHOTO-2025-07-19-12-29-43.png",
+      "path": "/home/hero-1.png"
+    },
+    "services-1": {
+      "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/0d9acdd5-e66e-4a3a-9af8-7317ba9399fa/PHOTO-2025-07-19-18-39-09.png",
+      "path": "/services/services-1.png"
+    },
+    "services-2": {
+      "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/6f6e9282-44ba-4005-af52-e6bc051bb2ed/make-the-walls-a-little-bit-lighter-and-_lv5hb11nQ66ujGC9i2GyhA_2dvr03UdR8OKkPCmjZVpkQ.png",
+      "path": "/services/services-2.png"
+    },
+    "services-3": {
+      "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/dcbd9fb5-3e22-46e1-a47c-58ad2a0b6262/furnish-this-basement-with-high-class-lu_PffCjuhbQXakUjmHa_owLQ_BT1tJaBeTB-oFP12Gf0eqg.png",
+      "path": "/services/services-3.png"
+    },
+    "services-4": {
+      "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/65a9b578-7e9d-485d-ac57-4687828abeea/there-is-a-person-who-is-point-in-the-le_avkX2Mm3RPyx_Pf4weDPVw_cmqwtxnpTbmzeP9Fe37zXQ+%281%29.png",
+      "path": "/services/services-4.png"
+    },
+    "services-5": {
+      "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/e4ba2ea8-5597-47b8-a09b-3c06c88fec39/make-this-photo-website-ready-edit-it-to_NYHZ-MYPToGWPFPEsmJ4pg_nNoBMBM3TtaZdQ5JpqBNsQ.png",
+      "path": "/services/services-5.png"
+    },
+    "services-6": {
+      "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/acbcb058-9695-4d63-b424-3890f79af325/make-this-deck-website-ready-cover-up-th_zRBN2PItRY6g5IBOOCaSLA_FkfUmbfcTQSP5hy4eMDyYQ.png",
+      "path": "/services/services-6.png"
+    },
+    "about-1": {
+      "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/73997520-67f6-441f-ad26-bcd92a6c406c/View+recent+photos.JPEG",
+      "path": "/about/about-1.JPEG"
+    },
+    "about-2": {
+      "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/d3517e01-8f24-4d83-8372-0a0c16357673/PHOTO-2025-03-11-15-14-03+%281%29.JPG",
+      "path": "/about/about-2.JPG"
+    },
+    "about-3": {
+      "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/65639253-5c1e-4024-b05c-9ba838d1424c/View+recent+photos+%281%29.jpg",
+      "path": "/about/about-3.jpg"
+    },
+    "about-4": {
+      "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/59d949f5-c3d4-4700-a9d1-728fac7f332a/PHOTO-2025-03-15-11-59-38.JPG",
+      "path": "/about/about-4.JPG"
+    },
+    "about-5": {
+      "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/4f85ce23-e3bb-4b4b-aae2-3ef7c558389f/PHOTO-2025-03-11-15-14-03.png",
+      "path": "/about/about-5.png"
+    },
+    "about-6": {
+      "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/a26bfab2-9a24-484e-884d-b84e657b289d/IMG_0927.jpg",
+      "path": "/about/about-6.jpg"
+    },
+    "contact-1": {
+      "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/495f12ab-e676-4c56-8a46-dd0c8bab9ef9/PHOTO-2025-07-19-18-39-09+%281%29.png",
+      "path": "/contact/contact-1.png"
+    },
+    "logo-1": {
+      "url": "//images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/5dbe41f3-28c3-4647-a25f-44199332d80c/BCP+Final+Logo.png",
+      "path": "/home/logo-1.png"
+    }
+  },
+  "stats": {
+    "total": 15,
+    "failed": 0,
+    "downloaded": 15
+  }
+}

@@ -1,0 +1,129 @@
+/* Project Detail Page Styles */
+
+.project-detail-hero {
+  position: relative;
+  width: 100vw;
+  min-height: 100svh;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.project-detail-hero .project-detail-hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.project-detail-hero .project-detail-hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-detail-hero .project-detail-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 19, 19, 0.5);
+}
+
+.project-detail-hero .container {
+  position: relative;
+  color: var(--base-100);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.project-detail-hero-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.project-detail-hero-header .mono {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--base-200);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.project-detail-hero-header h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin: 0.5rem 0;
+}
+
+.project-detail-hero-header .location {
+  font-size: 1.25rem;
+  color: var(--base-200);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Gallery Section */
+.project-detail-gallery {
+  position: relative;
+  width: 100vw;
+  padding: 8rem 0;
+  background: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .project-detail-hero {
+    min-height: 100svh;
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-detail-hero .container {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .project-detail-hero-header h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+
+  .project-detail-hero-header .location {
+    font-size: 1rem;
+  }
+
+  .project-detail-gallery {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-detail-hero-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .project-detail-hero-header .mono {
+    font-size: 0.8rem;
+  }
+
+  .project-detail-hero-header .location {
+    font-size: 0.9rem;
+  }
+
+  .project-detail-gallery {
+    padding: 3rem 0;
+  }
+}

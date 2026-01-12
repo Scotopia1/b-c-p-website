@@ -1,0 +1,162 @@
+.cta-window {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.cta-window .container {
+  position: relative;
+  background-color: var(--base-450);
+  border-radius: 2rem;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.cta-window .cta-window-clickable-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  z-index: 0;
+}
+
+.cta-window .cta-window-img-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cta-window .cta-window-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.cta-window .cta-window-clickable-area:hover .cta-window-img-wrapper img {
+  transform: scale(1.05);
+}
+
+.cta-window .cta-window-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 19, 19, 0.65);
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+.cta-window .cta-window-clickable-area:hover .cta-window-img-overlay {
+  background-color: rgba(20, 19, 19, 0.3);
+  backdrop-filter: blur(20px);
+  z-index: 5;
+}
+
+.cta-window .cta-window-hover-hint {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--base-100);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.cta-window .cta-window-clickable-area:hover .cta-window-hover-hint {
+  opacity: 1;
+}
+
+.cta-window .cta-window-hover-hint svg {
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+}
+
+.cta-window .cta-window-hover-hint p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.cta-window .cta-window-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: var(--base-100);
+  padding: 1rem;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.cta-window .cta-window-header h1 {
+  font-size: 10vw;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cta-window .cta-window-footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0.5rem;
+  z-index: 3;
+  color: var(--base-100);
+  pointer-events: none;
+}
+
+.cta-window .cta-window-footer .cta-window-callout {
+  width: 25%;
+}
+
+.cta-window .cta-window-footer .cta-window-description {
+  width: 25%;
+  text-align: right;
+}
+
+.cta-window .cta-window-footer p {
+  color: var(--base-300);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cta-window .cta-window-footer h3 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1000px) {
+  .cta-window .cta-window-footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .cta-window .cta-window-footer .cta-window-callout,
+  .cta-window .cta-window-footer .cta-window-description {
+    width: 100%;
+  }
+
+  .cta-window .cta-window-footer .cta-window-description {
+    text-align: left;
+  }
+}

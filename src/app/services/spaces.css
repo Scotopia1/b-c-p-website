@@ -1,0 +1,227 @@
+.spaces .spaces-header {
+  position: relative;
+  width: 100vw;
+  height: 40svh;
+  overflow: hidden;
+  color: var(--base-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spaces .spaces-header .container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.spaces .spaces-header .prop-col:nth-child(1) {
+  display: none;
+}
+
+.spaces .spaces-header .prop-col:nth-child(2) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.spaces .prop-filters {
+  display: flex;
+  gap: 2rem;
+}
+
+.spaces .prop-filters .filter {
+  color: var(--base-300);
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.spaces .prop-filters .filter.default {
+  color: var(--base-100);
+}
+
+.spaces .space {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: var(--base-100);
+  margin-bottom: 4rem;
+}
+
+.spaces .space .space-img {
+  aspect-ratio: 16/4;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.spaces .space .space-img img {
+  opacity: 0.75;
+}
+
+.spaces .space .space-info {
+  display: flex;
+  gap: 2rem;
+}
+
+.spaces .space .space-info h3 {
+  font-size: 1.75rem;
+  letter-spacing: -0.05rem;
+}
+
+.spaces .space .space-info .prop-info-col {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.spaces .prop-info-sub-col:nth-child(1) {
+  flex: 4;
+}
+
+.spaces .prop-info-sub-col:nth-child(2) {
+  flex: 3;
+}
+
+.spaces .prop-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.spaces .prop-name p.lg {
+  color: var(--base-200);
+}
+
+.spaces .prop-date p,
+.spaces .prop-client-name {
+  color: var(--base-200);
+}
+
+.spaces .prop-name p {
+  color: var(--base-100);
+}
+
+.spaces .prop-info-sub-col:nth-child(2) .prop-client p.lg {
+  color: var(--base-200);
+}
+
+.spaces .prop-info-sub-col:nth-child(2) .prop-client {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 0;
+}
+
+.spaces .prop-info-sub-col:nth-child(2) .prop-client p {
+  margin: 0;
+  line-height: 1.75rem;
+}
+
+.spaces .prop-client-img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 10rem;
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .spaces .spaces-header {
+    height: auto;
+    min-height: 30svh;
+    padding: 3rem 0;
+  }
+
+  .spaces .spaces-header .container {
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .spaces .spaces-header .prop-col:nth-child(2) {
+    flex: 1;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .spaces .spaces-header h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .spaces .spaces-header p.lg {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .spaces .prop-filters {
+    width: 85%;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .spaces .prop-filters .filter {
+    padding: 0;
+  }
+
+  .spaces .space {
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .spaces .space .space-img {
+    aspect-ratio: 5/3;
+    border-radius: 1rem;
+  }
+
+  .spaces .space .space-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .spaces .space .space-info .prop-info-col {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .spaces .space .space-info h3 {
+    font-size: 1.25rem;
+  }
+
+  .spaces .prop-name {
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .spaces .prop-name p.lg {
+    font-size: 0.875rem;
+  }
+
+  .spaces .prop-info-sub-col:nth-child(2) .prop-client {
+    justify-content: flex-start;
+  }
+
+  .spaces .prop-info-sub-col:nth-child(2) .prop-client p {
+    font-size: 0.875rem;
+  }
+
+  .spaces .prop-date {
+    display: none;
+  }
+
+  .spaces .prop-info-sub-col {
+    flex: 1;
+  }
+
+  .spaces .prop-filters .filter p.lg {
+    font-size: 1rem;
+  }
+}

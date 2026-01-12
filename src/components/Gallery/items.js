@@ -1,0 +1,25 @@
+const items = [
+  "Kitchen Remodel - Norwood",
+  "ADU & Complete Home Renovation - Norwood",
+  "Custom Deck - Norwood",
+  "Finished Basement - Somerville",
+  "Handicap Accessible Bathroom - Walpole",
+  "Bathroom Remodel - Norwood",
+  "Front Entrance - Canton",
+  "Custom Deck - Norwood",
+  "Kitchen Remodel - Newton",
+  "Finished Basement - Dedham",
+  "Bathroom Remodel - Dedham",
+  "Finished Attic - Dedham",
+  "Custom Deck - Walpole",
+  "Finished Basement - Westwood",
+  "Kitchen Remodel - Somerville",
+  "Bathroom Remodel - Norwood",
+  "Bay Window Installation - Norwood",
+  "Bathroom Remodel - Newton",
+  "Bathroom Remodel - Newton",
+  "Attic Bathroom Remodel - Mansfield",
+  "Interior Double Door - Norwood",
+];
+
+export default items;

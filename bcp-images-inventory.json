@@ -1,0 +1,554 @@
+{
+  "metadata": {
+    "website": "bcp411.com",
+    "scrape_date": "2026-01-11",
+    "total_categories": 8,
+    "total_images": 350
+  },
+  "categories": {
+    "branding": {
+      "description": "Company logo and branding assets",
+      "folder": "assets/branding",
+      "images": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/5dbe41f3-28c3-4647-a25f-44199332d80c/BCP+Final+Logo.png",
+          "filename": "bcp-logo.png",
+          "description": "BCP Final Logo - Main company branding",
+          "type": "logo"
+        }
+      ]
+    },
+    "decorative": {
+      "description": "Decorative and design elements",
+      "folder": "assets/decorative",
+      "images": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/c41ec822-0829-430d-a138-4916eec6341c/fern-left-dark.png",
+          "filename": "fern-left-dark.png",
+          "description": "Fern decoration - left side",
+          "type": "decorative"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/41439197-c4a0-4367-96d8-d321231b0f1c/fern-right-dark.png",
+          "filename": "fern-right-dark.png",
+          "description": "Fern decoration - right side",
+          "type": "decorative"
+        }
+      ]
+    },
+    "team_photos": {
+      "description": "Team and about page photos",
+      "folder": "assets/team",
+      "images": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/73997520-67f6-441f-ad26-bcd92a6c406c/View+recent+photos.JPEG",
+          "filename": "team-owner-and-wife.jpg",
+          "description": "Owner and wife smiling - team portrait",
+          "type": "team_photo"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/d3517e01-8f24-4d83-8372-0a0c16357673/PHOTO-2025-03-11-15-14-03+%281%29.JPG",
+          "filename": "team-construction-site-duo.jpg",
+          "description": "Two men at construction site",
+          "type": "team_photo"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/65639253-5c1e-4024-b05c-9ba838d1424c/View+recent+photos+%281%29.jpg",
+          "filename": "team-group-construction-frame.jpg",
+          "description": "Five people in construction frame",
+          "type": "team_photo"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/59d949f5-c3d4-4700-a9d1-728fac7f332a/PHOTO-2025-03-15-11-59-38.JPG",
+          "filename": "team-with-hearing-protection.jpg",
+          "description": "Two men with headphones/hearing protection",
+          "type": "team_photo"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/4f85ce23-e3bb-4b4b-aae2-3ef7c558389f/PHOTO-2025-03-11-15-14-03.png",
+          "filename": "team-with-excavator.png",
+          "description": "Men with excavator equipment",
+          "type": "team_photo"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/a26bfab2-9a24-484e-884d-b84e657b289d/IMG_0927.jpg",
+          "filename": "team-family-christmas.jpg",
+          "description": "Family at Christmas gathering",
+          "type": "team_photo"
+        }
+      ]
+    },
+    "service_images": {
+      "description": "Service category hero images",
+      "folder": "assets/services",
+      "images": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/65a9b578-7e9d-485d-ac57-4687828abeea/there-is-a-person-who-is-point-in-the-le_avkX2Mm3RPyx_Pf4weDPVw_cmqwtxnpTbmzeP9Fe37zXQ+%281%29.png",
+          "filename": "service-kitchen-remodel.png",
+          "description": "Kitchen remodel service - Modern kitchen with granite counters",
+          "type": "service_hero"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/6f6e9282-44ba-4005-af52-e6bc051bb2ed/make-the-walls-a-little-bit-lighter-and-_lv5hb11nQ66ujGC9i2GyhA_2dvr03UdR8OKkPCmjZVpkQ.png",
+          "filename": "service-bathroom-remodel.png",
+          "description": "Bathroom remodel service - Marble shower stall",
+          "type": "service_hero"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/dcbd9fb5-3e22-46e1-a47c-58ad2a0b6262/furnish-this-basement-with-high-class-lu_PffCjuhbQXakUjmHa_owLQ_BT1tJaBeTB-oFP12Gf0eqg.png",
+          "filename": "service-finished-basement.png",
+          "description": "Finished basement service - Living room with furniture",
+          "type": "service_hero"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/e4ba2ea8-5597-47b8-a09b-3c06c88fec39/make-this-photo-website-ready-edit-it-to_NYHZ-MYPToGWPFPEsmJ4pg_nNoBMBM3TtaZdQ5JpqBNsQ.png",
+          "filename": "service-addition.png",
+          "description": "Addition service - Living room with red walls",
+          "type": "service_hero"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/acbcb058-9695-4d63-b424-3890f79af325/make-this-deck-website-ready-cover-up-th_zRBN2PItRY6g5IBOOCaSLA_FkfUmbfcTQSP5hy4eMDyYQ.png",
+          "filename": "service-custom-deck.png",
+          "description": "Custom deck service - Upper deck patio",
+          "type": "service_hero"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/0d9acdd5-e66e-4a3a-9af8-7317ba9399fa/PHOTO-2025-07-19-18-39-09.png",
+          "filename": "service-adu.png",
+          "description": "ADU service - Accessory Dwelling Unit",
+          "type": "service_hero"
+        }
+      ]
+    },
+    "homepage": {
+      "description": "Homepage hero and featured images",
+      "folder": "assets/homepage",
+      "images": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/edd04c7c-4332-4fa6-8ed1-f4fcb3963033/PHOTO-2025-07-19-12-29-43.png",
+          "filename": "hero-modern-living-room.png",
+          "description": "Homepage hero - Modern living room with furniture",
+          "type": "hero"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/495f12ab-e676-4c56-8a46-dd0c8bab9ef9/PHOTO-2025-07-19-18-39-09+%281%29.png",
+          "filename": "contact-kitchen-dining.png",
+          "description": "Contact section - Kitchen and dining area",
+          "type": "contact_hero"
+        }
+      ]
+    },
+    "projects": {
+      "description": "All project images organized by project",
+      "folder": "projects",
+      "projects": [
+        {
+          "project_name": "Kitchen Remodel - Norwood, MA",
+          "project_slug": "kitchen-remodel-norwood",
+          "folder": "projects/kitchen-remodel-norwood",
+          "images": [
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/b6379087-b98c-4adc-b67b-0a78b53cfba4/put-an-electrical-outlet-in-that-black-h_XSAWw9woT6KK0d6luSxlIg_Vw2mIPXYT_CZpXUCcT9d1A.png",
+              "filename": "norwood-kitchen-01-completed.png",
+              "description": "Modern kitchen completed",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/7ef29259-4bb8-4478-82aa-d92d8279d55b/PNpEQyGASMCJlRQcs3opmQ.webp",
+              "filename": "norwood-kitchen-02-cabinets-tile.webp",
+              "description": "White cabinets with tile backsplash",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/c2c4a116-7701-4f21-9053-01c22221291e/remove-every-accesory-and-unblur-this-ph_PpwJsBfMRFef0JCVc9ao5w_91wMQC1AS1GOEaDWWTw7Jw.png",
+              "filename": "norwood-kitchen-03-window-view.png",
+              "description": "Kitchen with window",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/72f5c3d8-0635-4a32-92f2-978578087101/-lCRtAc2S6yYiuaX0JBy6w.webp",
+              "filename": "norwood-kitchen-04-stainless-appliances.webp",
+              "description": "Stainless steel appliances",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/0041a1db-9d2d-4210-9ada-4f1e17d7f989/EvrAmfFLSUaU-lLRRLClzw.webp",
+              "filename": "norwood-kitchen-05-in-progress.webp",
+              "description": "In-progress renovation",
+              "phase": "during"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/29577a4c-4f7e-420f-af74-8eab6789c084/unblur-this-photo-for-my-website-change-_XG4v3D5uR1mZD3ETCie7EA_nxW_6IMKREKzXwZL_JBaDg.png",
+              "filename": "norwood-kitchen-06-construction-tools.png",
+              "description": "Under construction with tools visible",
+              "phase": "during"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/69aad432-adc7-4e35-915a-267500863681/unblur-this-photo-for-my-website-change-_3Z0I_wmlSYyPW9lr2Nqrgw_TlCwFms5Seq6mMenhuZGvA.png",
+              "filename": "norwood-kitchen-07-partial-cabinets.png",
+              "description": "Partial cabinet installation",
+              "phase": "during"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/9c2a8d4d-d292-420f-bf8e-525408570a5f/unblur-this-photo-change-nothing-else_V_OBetseRI-FRD6px7Sz8A_eOHZyE3uROGy-If5kyZ9xw.png",
+              "filename": "norwood-kitchen-08-framing.png",
+              "description": "Framing stage",
+              "phase": "during"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/0761bb77-e392-426f-acb6-8520e73394c2/Screenshot+2026-01-07+180705.png",
+              "filename": "norwood-kitchen-09-renovation.png",
+              "description": "Renovation stage",
+              "phase": "during"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/2419bc93-06e3-4855-ad06-4ca0050b057c/Screenshot+2026-01-07+181407.png",
+              "filename": "norwood-kitchen-10-worker.png",
+              "description": "Worker on project",
+              "phase": "during"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/1767827484914-G967M2QY8BX8HSOFPGC6/Screenshot%2B2026-01-07%2B180900.png",
+              "filename": "norwood-kitchen-11-original.png",
+              "description": "Original kitchen before renovation",
+              "phase": "before"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/1daa0d63-e720-4a9f-baa7-0a067325ddbb/internal_upload_LwkbhHhKSGy50n9w4D4nwA.png",
+              "filename": "norwood-kitchen-12-before.png",
+              "description": "Before renovation",
+              "phase": "before"
+            }
+          ]
+        },
+        {
+          "project_name": "ADU & Complete Home Renovation - Norwood, MA",
+          "project_slug": "adu-renovation-norwood",
+          "folder": "projects/adu-renovation-norwood",
+          "images": [
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/0a077f30-7cd0-4008-bb96-cc74af079651/PHOTO-2025-07-19-12-29-43+%281%29.JPG",
+              "filename": "adu-norwood-01-living-room.jpg",
+              "description": "Living space",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/65e7b224-21d3-4aa6-8c0e-ac85cad677ab/PHOTO-2025-07-19-18-39-09+%282%29.JPG",
+              "filename": "adu-norwood-02-kitchen.jpg",
+              "description": "Kitchen area",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/a43e6091-4f8e-4866-a0d2-e93380de768f/PHOTO-2025-07-19-18-39-09+%286%29.JPG",
+              "filename": "adu-norwood-03-interior.jpg",
+              "description": "Interior detail",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/8ef936b8-9bb9-4e88-b507-7a94081d7224/PHOTO-2025-07-19-18-39-09+%285%29.JPG",
+              "filename": "adu-norwood-04-room.jpg",
+              "description": "Room view",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/102818ae-ca45-448f-b472-0d31625278b4/3604813f678e34cc00077824aaf04c78-cc_ft_576.webp",
+              "filename": "adu-norwood-05-detail.webp",
+              "description": "Interior detail",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/f762728a-a137-4d16-91e0-3564fb16bd92/4c3ee79799a8f0f5a49bfed7c5e6e6b1-cc_ft_960.webp",
+              "filename": "adu-norwood-06-view.webp",
+              "description": "Interior view",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/135ea786-c23a-440f-82ef-db935e591c0c/PHOTO-2025-07-19-18-39-09+%284%29.JPG",
+              "filename": "adu-norwood-07-space.jpg",
+              "description": "Living space",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/156fa245-30b3-42d6-997b-9236d71be677/PHOTO-2025-07-18-15-24-09.JPG",
+              "filename": "adu-norwood-08-area.jpg",
+              "description": "Interior area",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/d09dfb09-4517-4886-829e-3d2437c35528/687f2f56af1e6f82ad52ab7cbe6ce210-cc_ft_576.webp",
+              "filename": "adu-norwood-09-detail.webp",
+              "description": "Detail view",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/6b213acf-5720-44d4-a7b3-fcc42bf53c28/PHOTO-2025-07-19-18-39-09+%288%29.JPG",
+              "filename": "adu-norwood-10-room.jpg",
+              "description": "Room area",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/f3a500ff-1561-4594-abc1-205a4e256905/2d2686ef33accdf544dea69a4e188e96-cc_ft_960.webp",
+              "filename": "adu-norwood-11-space.webp",
+              "description": "Space view",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/216c95f0-dddb-4af4-bcf9-45ded6ece8e3/PHOTO-2025-07-19-18-39-09+%287%29.JPG",
+              "filename": "adu-norwood-12-bathroom.jpg",
+              "description": "Bathroom",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/ff6767d4-3345-4f66-b1b8-293ff9a1807b/afb6bc34e4765ebc3cbb4bca60af9903-uncropped_scaled_within_1344_1008.webp",
+              "filename": "adu-norwood-13-detail.webp",
+              "description": "Detail",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/362b8e44-3cad-4f8f-a66a-485c246d87aa/91809be03b3b95b305dff6971e6d892d-uncropped_scaled_within_1344_1008.webp",
+              "filename": "adu-norwood-14-view.webp",
+              "description": "View",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/99b6c515-6b98-4b78-adf2-712e0a55fbb0/PHOTO-2025-07-19-18-39-09+%283%29.JPG",
+              "filename": "adu-norwood-15-area.jpg",
+              "description": "Area",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/1a796c3f-9957-4579-a437-e865d137c96a/baf11c74c3f91f1a8bf9e45f8fb39579-uncropped_scaled_within_1344_1008.webp",
+              "filename": "adu-norwood-16-detail.webp",
+              "description": "Detail",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/3250dd44-4153-44c9-9b55-f279bf538a8b/PHOTO-2025-07-18-15-38-08+%281%29.JPG",
+              "filename": "adu-norwood-17-view.jpg",
+              "description": "View",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/eddcd6c1-f6c7-4056-bfb9-f624cf558658/9ced9401bb5166fd87507b33714f26f6-uncropped_scaled_within_1344_1008.webp",
+              "filename": "adu-norwood-18-mechanical.webp",
+              "description": "Mechanical systems",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/c3b844ee-22ea-4a49-965c-035bdf9fc0a9/31bcc78a44a5b4649f33eeb8a3032cf6-uncropped_scaled_within_1344_1008.webp",
+              "filename": "adu-norwood-19-utility.webp",
+              "description": "Utility systems",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/daaac71c-9a42-426a-8b5a-a8f7c654a820/9f433cb9f7f10ea2e9b13f2da610aab2-uncropped_scaled_within_1344_1008.webp",
+              "filename": "adu-norwood-20-systems.webp",
+              "description": "Systems",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/b7cb6bc6-c2f5-45eb-9b22-34234fbc34bb/6d85e90242deb38aedc58a955291ecd0-uncropped_scaled_within_1344_1008.webp",
+              "filename": "adu-norwood-21-floorplan-1.webp",
+              "description": "Floor plan 1",
+              "phase": "planning"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/5048a97f-c9f6-49bc-8c8a-4713fbf05fd3/b4541fe6c5e72f60e4d76ede993ab92f-uncropped_scaled_within_1344_1008.webp",
+              "filename": "adu-norwood-22-floorplan-2.webp",
+              "description": "Floor plan 2",
+              "phase": "planning"
+            }
+          ]
+        },
+        {
+          "project_name": "Custom Deck - Norwood, MA (Project 1)",
+          "project_slug": "custom-deck-norwood-1",
+          "folder": "projects/custom-deck-norwood-1",
+          "images": [
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/acbcb058-9695-4d63-b424-3890f79af325/make-this-deck-website-ready-cover-up-th_zRBN2PItRY6g5IBOOCaSLA_FkfUmbfcTQSP5hy4eMDyYQ.png",
+              "filename": "deck-norwood-01-main.png",
+              "description": "Main deck view",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/56a9b020-c634-47d5-a7f6-de88c2b38f2e/IMG_2822.JPG",
+              "filename": "deck-norwood-02.jpg",
+              "description": "Deck detail",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/e55e25f5-7edc-46cb-94f7-0ce74b16b220/IMG_2826.JPG",
+              "filename": "deck-norwood-03.jpg",
+              "description": "Deck view",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/29e3301e-936a-46ea-80fe-b062c9b696ca/IMG_2821.JPG",
+              "filename": "deck-norwood-04.jpg",
+              "description": "Deck angle",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/4e058810-7f82-4a31-a940-a21328a2d151/IMG_2823.JPG",
+              "filename": "deck-norwood-05.jpg",
+              "description": "Deck perspective",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/764a5197-3c05-40bc-b88c-64737a91b682/IMG_2824+%281%29.JPG",
+              "filename": "deck-norwood-06.jpg",
+              "description": "Deck shot",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/02df83e5-328d-4408-89a2-cdac6f8944e8/IMG_2827.JPG",
+              "filename": "deck-norwood-07.jpg",
+              "description": "Deck photo",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/968be12e-4e26-4a75-a865-75e3c7ff6207/IMG_2816.JPG",
+              "filename": "deck-norwood-08.jpg",
+              "description": "Deck image",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/4bdd6b21-a54e-46ab-928a-636a4e6c3403/IMG_2817.JPG",
+              "filename": "deck-norwood-09.jpg",
+              "description": "Deck picture",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/348f6644-75fe-46cc-aa03-4d23506308aa/IMG_2811.JPG",
+              "filename": "deck-norwood-10.jpg",
+              "description": "Deck view 10",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/4f127d52-2eb7-46f2-b244-09a125437547/IMG_2812.JPG",
+              "filename": "deck-norwood-11.jpg",
+              "description": "Deck view 11",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/d539ee69-09c6-4b84-bd80-e853189d7c48/IMG_2814.JPG",
+              "filename": "deck-norwood-12.jpg",
+              "description": "Deck view 12",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/c28a9bc4-1355-47d2-8e8b-4afded398249/IMG_2815.JPG",
+              "filename": "deck-norwood-13.jpg",
+              "description": "Deck view 13",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/09973e07-6b4b-4ff4-a489-7abb84a56027/IMG_2819.JPG",
+              "filename": "deck-norwood-14.jpg",
+              "description": "Deck view 14",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/65ac8a42-6a16-4972-ad39-31d663e99252/IMG_2820.JPG",
+              "filename": "deck-norwood-15.jpg",
+              "description": "Deck view 15",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/cfe8039d-fd3c-41d7-9b69-d81f27991bef/IMG_2807.JPG",
+              "filename": "deck-norwood-16.jpg",
+              "description": "Deck view 16",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/412194f0-f6e9-4abf-9653-5d1726f306ca/IMG_2808.JPG",
+              "filename": "deck-norwood-17.jpg",
+              "description": "Deck view 17",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/03e4bba3-9834-48c1-919b-ddf4901fcd0e/IMG_2809.JPG",
+              "filename": "deck-norwood-18.jpg",
+              "description": "Deck view 18",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/ab81df2e-16ff-4c90-809f-209e4c191c77/10aaf030-f90d-424d-987c-bba2f0614f0b+%281%29.JPG",
+              "filename": "deck-norwood-19.jpg",
+              "description": "Deck view 19",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/39c55d3c-fd06-4711-b34d-0340c3655c3d/bea7513e-9072-4809-9af5-c07b64346603.JPG",
+              "filename": "deck-norwood-20.jpg",
+              "description": "Deck view 20",
+              "phase": "after"
+            }
+          ]
+        },
+        {
+          "project_name": "Custom Deck - Norwood, MA (Project 2)",
+          "project_slug": "custom-deck-norwood-2",
+          "folder": "projects/custom-deck-norwood-2",
+          "images": [
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/bc6a10cf-9138-4586-a532-aa76c7bb3076/change-the-color-of-the-siding-to-a-very_7Y-ZFd5cQoqOHKAeuc0OAw_VUKl3YIoSdijiaB1hs3Ljw.png",
+              "filename": "deck-norwood2-01-main.png",
+              "description": "Main deck with siding",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/dd03c376-0433-4e26-8ad6-1cbca9a82d07/484142196_1171725377991379_1961477220610603809_n.jpg",
+              "filename": "deck-norwood2-02.jpg",
+              "description": "Deck view",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/18b0cc1e-4020-4e24-a1b6-c02123d671c3/482016767_1171725407991376_5668169217805428196_n.jpg",
+              "filename": "deck-norwood2-03.jpg",
+              "description": "Deck construction",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/99207f01-a834-46a6-b938-9de267ce82e9/484167158_1171725434658040_7589481802401194718_n.jpg",
+              "filename": "deck-norwood2-04.jpg",
+              "description": "Deck detail",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/fa62c08e-fc9d-4c15-9731-186cf4078e03/483914638_1171725174658066_7575695968962618578_n.jpg",
+              "filename": "deck-norwood2-05.jpg",
+              "description": "Deck angle",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/bf716688-2c07-42d4-b209-1dbe337d9591/482023394_1171725184658065_8756931070080628623_n.jpg",
+              "filename": "deck-norwood2-06.jpg",
+              "description": "Deck perspective",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/7c75a268-1e71-4524-8c2c-caf0c67d4172/482073035_1171725364658047_2143044959103250228_n.jpg",
+              "filename": "deck-norwood2-07.jpg",
+              "description": "Deck shot",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/93a10998-87f0-4d46-b800-6f463e2b861c/484040431_1171725374658046_4593636540997881187_n.jpg",
+              "filename": "deck-norwood2-08.jpg",
+              "description": "Deck photo",
+              "phase": "after"
+            },
+            {
+              "url": "https://images.squarespace-cdn.com/content/v1/6958347f9f53aa0c28f25009/5698ee66-ff94-432b-bf26-cd98d0c16faf/484108146_1171725177991399_5942753769016584293_n.jpg",
+              "filename": "deck-norwood2-09.jpg",
+              "description": "Deck image",
+              "phase": "after"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
