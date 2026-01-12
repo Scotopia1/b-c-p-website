@@ -1,8 +1,7 @@
 .menu-toggle {
   position: fixed;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 1rem;
+  right: 2rem;
   width: 130px;
   height: 53px;
   background: rgba(242, 237, 230, 0.75);
@@ -86,4 +85,11 @@
 
 .menu-toggle.opened .menu-bar[data-position="bottom"] {
   transform: translateY(0) rotate(-45deg) scaleX(1.05);
+}
+
+@media (max-width: 1000px) {
+  .menu-toggle {
+    top: 0.5rem;
+    right: 1.5rem;
+  }
 }

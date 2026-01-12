@@ -8,7 +8,6 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 import { useViewTransition } from "@/hooks/useViewTransition";
-import AnimatedButton from "../AnimatedButton/AnimatedButton";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -86,9 +85,6 @@ const TopBar = () => {
             style={{ width: 'auto', height: 'auto' }}
           />
         </a>
-      </div>
-      <div className="top-bar-cta">
-        <AnimatedButton label="Free Consultation" route="/consultation" animate={false} />
       </div>
     </div>
   );
