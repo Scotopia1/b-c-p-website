@@ -1,11 +1,18 @@
 "use client";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 import { ReactLenis } from "lenis/react";
 import { ViewTransitions } from "next-view-transitions";
 
 export default function ClientLayout({ children }) {
   const [isMobile, setIsMobile] = useState(false);
+  const pathname = usePathname();
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   useEffect(() => {
     const checkMobile = () => {

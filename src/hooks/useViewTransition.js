@@ -48,6 +48,9 @@ export const useViewTransition = () => {
       return;
     }
 
+    // Scroll to top before navigation
+    window.scrollTo(0, 0);
+
     router.push(href, {
       onTransitionReady: slideInOut,
       ...options,

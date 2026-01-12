@@ -2,6 +2,7 @@
 import "./TopBar.css";
 
 import { useRef, useEffect } from "react";
+import Image from "next/image";
 
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -76,7 +77,14 @@ const TopBar = () => {
             navigateWithTransition("/");
           }}
         >
-          <img src="/logo/BCP-New-Logo.png" alt="BCP Logo" />
+          <Image
+            src="/Logo/BCP-New-Logo.png"
+            alt="BCP Logo"
+            width={120}
+            height={50}
+            priority
+            style={{ width: 'auto', height: 'auto' }}
+          />
         </a>
       </div>
       <div className="top-bar-cta">

@@ -36,6 +36,7 @@ html {
   overflow-y: auto;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
+  /* Note: Lenis handles smooth scrolling - don't add scroll-behavior: smooth here */
 }
 
 html::-webkit-scrollbar {

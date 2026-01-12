@@ -2,6 +2,7 @@
 import "./Footer.css";
 
 import { useRef } from "react";
+import Image from "next/image";
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -51,7 +52,13 @@ const Footer = () => {
             <div className="footer-meta-block">
               <div className="footer-meta-logo">
                 <Copy delay={0.1}>
-                  <img src="/logo/BCP-New-Logo.png" alt="BCP Logo" />
+                  <Image
+                    src="/Logo/BCP-New-Logo.png"
+                    alt="BCP Logo"
+                    width={150}
+                    height={60}
+                    style={{ width: 'auto', height: 'auto' }}
+                  />
                 </Copy>
               </div>
               <Copy delay={0.2}>
