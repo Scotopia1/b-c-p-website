@@ -71,35 +71,47 @@ const Nav = () => {
       const pElements = menu.querySelectorAll("p");
 
       h2Elements.forEach((h2, index) => {
-        const split = SplitText.create(h2, {
-          type: "lines",
-          mask: "lines",
-          linesClass: "split-line",
-        });
+        try {
+          const split = SplitText.create(h2, {
+            type: "lines",
+            mask: "lines",
+            linesClass: "split-line",
+          });
 
-        gsap.set(split.lines, { y: "120%" });
+          if (split && split.lines && split.lines.length > 0) {
+            gsap.set(split.lines, { y: "120%" });
 
-        split.lines.forEach((line) => {
-          line.style.pointerEvents = "auto";
-        });
+            split.lines.forEach((line) => {
+              line.style.pointerEvents = "auto";
+            });
 
-        splitTextRefs.current.push(split);
+            splitTextRefs.current.push(split);
+          }
+        } catch (err) {
+          // Skip if SplitText fails
+        }
       });
 
       pElements.forEach((p, index) => {
-        const split = SplitText.create(p, {
-          type: "lines",
-          mask: "lines",
-          linesClass: "split-line",
-        });
+        try {
+          const split = SplitText.create(p, {
+            type: "lines",
+            mask: "lines",
+            linesClass: "split-line",
+          });
 
-        gsap.set(split.lines, { y: "120%" });
+          if (split && split.lines && split.lines.length > 0) {
+            gsap.set(split.lines, { y: "120%" });
 
-        split.lines.forEach((line) => {
-          line.style.pointerEvents = "auto";
-        });
+            split.lines.forEach((line) => {
+              line.style.pointerEvents = "auto";
+            });
 
-        splitTextRefs.current.push(split);
+            splitTextRefs.current.push(split);
+          }
+        } catch (err) {
+          // Skip if SplitText fails
+        }
       });
 
       isInitializedRef.current = true;
@@ -124,16 +136,16 @@ const Nav = () => {
         duration: 2,
         onStart: () => {
           menu.style.pointerEvents = "all";
-        },
-        onStart: () => {
           splitTextRefs.current.forEach((split, index) => {
-            gsap.to(split.lines, {
-              y: "0%",
-              stagger: 0.05,
-              delay: 0.35 + index * 0.1,
-              duration: 1,
-              ease: "power4.out",
-            });
+            if (split && split.lines && split.lines.length > 0) {
+              gsap.to(split.lines, {
+                y: "0%",
+                stagger: 0.05,
+                delay: 0.35 + index * 0.1,
+                duration: 1,
+                ease: "power4.out",
+              });
+            }
           });
         },
         onComplete: () => {
@@ -152,7 +164,9 @@ const Nav = () => {
               menu.style.pointerEvents = "none";
 
               splitTextRefs.current.forEach((split) => {
-                gsap.set(split.lines, { y: "120%" });
+                if (split && split.lines && split.lines.length > 0) {
+                  gsap.set(split.lines, { y: "120%" });
+                }
               });
 
               document.body.classList.remove("menu-open");
@@ -165,17 +179,19 @@ const Nav = () => {
       });
 
       splitTextRefs.current.forEach((split, index) => {
-        textTimeline.to(
-          split.lines,
-          {
-            y: "-120%",
-            stagger: 0.03,
-            delay: index * 0.05,
-            duration: 1,
-            ease: "power3.out",
-          },
-          0
-        );
+        if (split && split.lines && split.lines.length > 0) {
+          textTimeline.to(
+            split.lines,
+            {
+              y: "-120%",
+              stagger: 0.03,
+              delay: index * 0.05,
+              duration: 1,
+              ease: "power3.out",
+            },
+            0
+          );
+        }
       });
     }
   }, []);

@@ -52,30 +52,44 @@ export default function Copy({ children, animateOnScroll = true, delay = 0 }) {
           elements = [containerRef.current];
         }
 
+        // Skip if no elements to process
+        if (elements.length === 0) return;
+
         elements.forEach((element) => {
-          elementRefs.current.push(element);
+          if (!element) return;
 
-          const split = SplitText.create(element, {
-            type: "lines",
-            mask: "lines",
-            linesClass: "line++",
-            lineThreshold: 0.1,
-          });
+          try {
+            elementRefs.current.push(element);
 
-          splitRefs.current.push(split);
+            const split = SplitText.create(element, {
+              type: "lines",
+              mask: "lines",
+              linesClass: "line++",
+              lineThreshold: 0.1,
+            });
 
-          const computedStyle = window.getComputedStyle(element);
-          const textIndent = computedStyle.textIndent;
+            if (!split || !split.lines || split.lines.length === 0) return;
 
-          if (textIndent && textIndent !== "0px") {
-            if (split.lines.length > 0) {
-              split.lines[0].style.paddingLeft = textIndent;
+            splitRefs.current.push(split);
+
+            const computedStyle = window.getComputedStyle(element);
+            const textIndent = computedStyle.textIndent;
+
+            if (textIndent && textIndent !== "0px") {
+              if (split.lines.length > 0) {
+                split.lines[0].style.paddingLeft = textIndent;
+              }
+              element.style.textIndent = "0";
             }
-            element.style.textIndent = "0";
-          }
 
-          lines.current.push(...split.lines);
+            lines.current.push(...split.lines);
+          } catch (err) {
+            // Skip this element if SplitText fails
+          }
         });
+
+        // Only animate if we have lines to animate
+        if (lines.current.length === 0) return;
 
         gsap.set(lines.current, { y: "100%" });
 
