@@ -33,6 +33,17 @@
 .col-1 {
   flex: 3;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-1 .links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .col-2 {
@@ -50,7 +61,7 @@
 .link a h2 {
   text-decoration: none;
   color: var(--base-300);
-  font-size: 4.8rem;
+  font-size: 6.24rem;
   line-height: 1.1;
   pointer-events: auto;
   transition: color 0.3s ease-out;
@@ -125,12 +136,14 @@
 
 @media (max-width: 1000px) {
   .link a h2 {
-    font-size: 2.7rem;
+    font-size: 3.5rem;
     line-height: 1.2;
   }
 
   .col-1 {
     padding: 1.5rem;
+    justify-content: center;
+    align-items: center;
   }
 
   .col-2 {
@@ -169,7 +182,7 @@
 
 @media (max-width: 768px) {
   .link a h2 {
-    font-size: 2.25rem;
+    font-size: 2.9rem;
   }
 
   .menu-cta .cta-button {
@@ -183,7 +196,7 @@
 
 @media (max-width: 480px) {
   .link a h2 {
-    font-size: 1.8rem;
+    font-size: 2.34rem;
   }
 
   .col-1,
