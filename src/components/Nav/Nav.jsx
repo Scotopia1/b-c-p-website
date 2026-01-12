@@ -286,22 +286,6 @@ const Nav = () => {
                     <p>Get Free Consultation</p>
                   </a>
                 </div>
-                <div className="menu-meta">
-                  <p>Service Areas</p>
-                  <p>Greater Boston</p>
-                  <p>North & South Shore</p>
-                </div>
-              </div>
-              <div className="sub-col">
-                <div className="menu-meta">
-                  <p>Follow Us</p>
-                  <p>Facebook</p>
-                </div>
-                <div className="menu-meta">
-                  <p>Licensed & Insured</p>
-                  <p>MA HIC #183522</p>
-                  <p>MA CSL #CS-096174</p>
-                </div>
               </div>
             </div>
           </div>
