@@ -7,7 +7,7 @@ import {
   useRef,
   useLayoutEffect,
 } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 import gsap from "gsap";
 import CustomEase from "gsap/CustomEase";
@@ -32,9 +32,41 @@ const Nav = () => {
   const isInitializedRef = useRef(false);
   const splitTextRefs = useRef([]);
   const router = useRouter();
+  const pathname = usePathname();
   const lenis = useLenis();
+  const prevPathnameRef = useRef(pathname);
 
   const { navigateWithTransition } = useViewTransition();
+
+  // Reset menu state on route change
+  useEffect(() => {
+    if (prevPathnameRef.current !== pathname) {
+      prevPathnameRef.current = pathname;
+
+      // Reset states after navigation
+      if (isOpen) {
+        setIsOpen(false);
+      }
+      setIsNavigating(false);
+      setIsAnimating(false);
+
+      // Reset menu visual state immediately
+      if (menuRef.current) {
+        gsap.set(menuRef.current, {
+          clipPath: "circle(0% at 50% 50%)",
+        });
+        menuRef.current.style.pointerEvents = "none";
+
+        splitTextRefs.current.forEach((split) => {
+          if (split && split.lines && split.lines.length > 0) {
+            gsap.set(split.lines, { y: "120%" });
+          }
+        });
+
+        document.body.classList.remove("menu-open");
+      }
+    }
+  }, [pathname, isOpen, setIsOpen, setIsNavigating, setIsAnimating]);
 
   useEffect(() => {
     if (lenis) {
@@ -218,9 +250,19 @@ const Nav = () => {
       if (isNavigating) return;
 
       setIsNavigating(true);
-      navigateWithTransition(href);
+
+      // Close the menu and navigate
+      if (isOpen) {
+        setIsOpen(false);
+        // Delay navigation to allow close animation to start
+        setTimeout(() => {
+          navigateWithTransition(href);
+        }, 500);
+      } else {
+        navigateWithTransition(href);
+      }
     },
-    [isNavigating, router, isOpen, setIsOpen]
+    [isNavigating, isOpen, setIsOpen, setIsNavigating, navigateWithTransition]
   );
 
   const splitTextIntoSpans = (text) => {
