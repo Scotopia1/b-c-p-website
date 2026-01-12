@@ -144,6 +144,10 @@
 }
 
 @media (max-width: 1000px) {
+  .cta-window .cta-window-hover-hint {
+    top: 40%;
+  }
+
   .cta-window .cta-window-footer {
     flex-direction: column;
     justify-content: flex-start;
