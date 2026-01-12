@@ -261,7 +261,7 @@
 .client-reviews-container {
   position: relative;
   width: 100vw;
-  height: 120svh;
+  height: 85svh;
   color: var(--base-100);
   padding: 4rem 0 2rem 0;
 }
@@ -297,7 +297,13 @@
 @media (min-height: 1200px) {
   .client-reviews-container {
     margin: 10rem 0 4rem 0;
-    height: 60svh;
+    height: 50svh;
+  }
+}
+
+@media (min-width: 1400px) {
+  .client-reviews-container {
+    height: 75svh;
   }
 }
 
