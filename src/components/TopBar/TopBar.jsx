@@ -8,12 +8,15 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 import { useViewTransition } from "@/hooks/useViewTransition";
+import { useMenu } from "@/context/MenuContext";
+import MenuBtn from "../MenuBtn/MenuBtn";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const TopBar = () => {
   const topBarRef = useRef(null);
   const { navigateWithTransition } = useViewTransition();
+  const { isOpen, toggleMenu } = useMenu();
   let lastScrollY = 0;
   let isScrolling = false;
 
@@ -86,6 +89,7 @@ const TopBar = () => {
           />
         </a>
       </div>
+      <MenuBtn isOpen={isOpen} toggleMenu={toggleMenu} />
     </div>
   );
 };

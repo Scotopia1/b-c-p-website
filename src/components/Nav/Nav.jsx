@@ -3,7 +3,6 @@ import "./Nav.css";
 
 import {
   useEffect,
-  useState,
   useCallback,
   useRef,
   useLayoutEffect,
@@ -15,15 +14,20 @@ import CustomEase from "gsap/CustomEase";
 import SplitText from "gsap/SplitText";
 import { useLenis } from "lenis/react";
 
-import MenuBtn from "../MenuBtn/MenuBtn";
 import { useViewTransition } from "@/hooks/useViewTransition";
+import { useMenu } from "@/context/MenuContext";
 
 gsap.registerPlugin(SplitText);
 
 const Nav = () => {
-  const [isAnimating, setIsAnimating] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-  const [isNavigating, setIsNavigating] = useState(false);
+  const {
+    isOpen,
+    setIsOpen,
+    isAnimating,
+    setIsAnimating,
+    isNavigating,
+    setIsNavigating,
+  } = useMenu();
   const menuRef = useRef(null);
   const isInitializedRef = useRef(false);
   const splitTextRefs = useRef([]);
@@ -182,14 +186,6 @@ const Nav = () => {
     }
   }, [isOpen, animateMenu]);
 
-  const toggleMenu = useCallback(() => {
-    if (!isAnimating && isInitializedRef.current && !isNavigating) {
-      setIsOpen((prevIsOpen) => {
-        return !prevIsOpen;
-      });
-    } else {
-    }
-  }, [isAnimating, isNavigating]);
 
   const handleLinkClick = useCallback(
     (e, href) => {
@@ -225,7 +221,6 @@ const Nav = () => {
 
   return (
     <div>
-      <MenuBtn isOpen={isOpen} toggleMenu={toggleMenu} />
       <div className="menu" ref={menuRef}>
         <div className="menu-wrapper">
           <div className="col col-1">
