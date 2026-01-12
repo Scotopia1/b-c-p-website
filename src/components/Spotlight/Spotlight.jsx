@@ -17,6 +17,9 @@ const Spotlight = () => {
   const titleElementsRef = useRef([]);
   const currentActiveIndexRef = useRef(0);
   const scrollTriggerRef = useRef(null);
+  const bgImgRef = useRef(null);
+  const lastTitleUpdateRef = useRef(0);
+  const titlePositionsRef = useRef([]);
 
   // NOTE: These values are interconnected - when speed changes, it affects when images finish their movement, which also affects the gap between images. When you change the number of items in spotlightItems array, you'll need to adjust these config settings together. Test different combinations until you find the right balance that looks good.
   const config = {
@@ -148,13 +151,31 @@ const Spotlight = () => {
 
     imageElements.forEach((img) => gsap.set(img, { opacity: 0 }));
 
+    // Cache DOM references to avoid layout thrashing
+    bgImgRef.current = document.querySelector(".spotlight-bg-img img");
+
+    // Calculate and cache title positions (will be updated on resize)
+    const updateTitlePositions = () => {
+      titlePositionsRef.current = Array.from(titleElements).map((title) => {
+        const rect = title.getBoundingClientRect();
+        return {
+          top: rect.top,
+          height: rect.height,
+          center: rect.top + rect.height / 2,
+        };
+      });
+    };
+
+    // Initial position calculation
+    updateTitlePositions();
+
     scrollTriggerRef.current = ScrollTrigger.create({
       trigger: ".spotlight",
       start: "top top",
       end: `+=${window.innerHeight * 10}px`,
       pin: true,
       pinSpacing: true,
-      scrub: 1,
+      scrub: 2,
       onUpdate: (self) => {
         const progress = self.progress;
 
@@ -237,27 +258,36 @@ const Spotlight = () => {
             }
           });
 
-          const viewportMiddle = viewportHeight / 2;
-          let closestIndex = 0;
-          let closestDistance = Infinity;
+          // Throttle title opacity updates to reduce layout thrashing
+          const now = Date.now();
+          if (now - lastTitleUpdateRef.current > 50) {
+            lastTitleUpdateRef.current = now;
 
-          titleElements.forEach((title, index) => {
-            const titleRect = title.getBoundingClientRect();
-            const titleCenter = titleRect.top + titleRect.height / 2;
-            const distanceFromCenter = Math.abs(titleCenter - viewportMiddle);
+            const viewportMiddle = viewportHeight / 2;
+            let closestIndex = 0;
+            let closestDistance = Infinity;
 
-            if (distanceFromCenter < closestDistance) {
-              closestDistance = distanceFromCenter;
-              closestIndex = index;
+            // Use cached positions adjusted by current scroll offset
+            titleElements.forEach((title, index) => {
+              const titleRect = title.getBoundingClientRect();
+              const titleCenter = titleRect.top + titleRect.height / 2;
+              const distanceFromCenter = Math.abs(titleCenter - viewportMiddle);
+
+              if (distanceFromCenter < closestDistance) {
+                closestDistance = distanceFromCenter;
+                closestIndex = index;
+              }
+            });
+
+            if (closestIndex !== currentActiveIndex) {
+              titleElements[currentActiveIndex].style.opacity = "0.35";
+              titleElements[closestIndex].style.opacity = "1";
+              // Use cached reference instead of querySelector
+              if (bgImgRef.current) {
+                bgImgRef.current.src = spotlightItems[closestIndex].img;
+              }
+              currentActiveIndex = closestIndex;
             }
-          });
-
-          if (closestIndex !== currentActiveIndex) {
-            titleElements[currentActiveIndex].style.opacity = "0.35";
-            titleElements[closestIndex].style.opacity = "1";
-            document.querySelector(".spotlight-bg-img img").src =
-              spotlightItems[closestIndex].img;
-            currentActiveIndex = closestIndex;
           }
         } else if (progress > 0.95) {
           spotlightHeader.style.opacity = "0";

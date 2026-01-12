@@ -1,11 +1,12 @@
 .footer {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   padding: 1rem;
   gap: 1rem;
+  overflow-x: hidden;
 }
 
 .footer .footer-meta {
@@ -130,7 +131,7 @@
 }
 
 .footer-copyright {
-  display: centered;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 8rem;
@@ -148,14 +149,28 @@
   .footer .footer-meta .container.footer-meta-header,
   .footer .footer-meta .container.footer-socials {
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
   }
 
   .footer
     .footer-meta
     .container.footer-meta-header
     .footer-meta-col:nth-child(2)
-    .footer-nav-links,
+    .footer-nav-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem 1rem;
+    text-align: left;
+  }
+
+  .footer
+    .footer-meta
+    .container.footer-meta-header
+    .footer-meta-col:nth-child(2)
+    .footer-nav-links h3 {
+    font-size: 1.1rem;
+  }
+
   .footer .footer-meta .container.footer-socials .footer-meta-col:nth-child(2) {
     justify-content: flex-start;
     text-align: left;
@@ -170,7 +185,7 @@
   }
 
   .footer .footer-company-name {
-    justify-content: flex-start;
+    align-items: flex-start;
     text-align: left;
   }
 
@@ -178,12 +193,59 @@
     margin-bottom: 0;
   }
 
-  .footer .footer-meta-header .footer-meta-col:nth-child(2) {
-    display: none;
+  .footer .footer-meta .container.footer-meta-header .footer-meta-block h2 {
+    width: 100%;
+    font-size: 1.75rem;
+  }
+
+  .footer .footer-socials-wrapper .icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.1rem;
   }
 
   .footer-copyright {
     flex-direction: column;
     gap: 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer .footer-meta {
+    padding: 2rem 0;
+  }
+
+  .footer
+    .footer-meta
+    .container.footer-meta-header
+    .footer-meta-col:nth-child(2)
+    .footer-nav-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer
+    .footer-meta
+    .container.footer-meta-header
+    .footer-meta-col:nth-child(2)
+    .footer-nav-links h3 {
+    font-size: 1rem;
+  }
+
+  .footer .footer-meta .container.footer-meta-header .footer-meta-logo {
+    height: 5rem;
+  }
+
+  .footer .footer-meta .container.footer-meta-header .footer-meta-block h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer .footer-socials-wrapper .icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  .footer .footer-company-name h3 {
+    font-size: 1.25rem;
   }
 }
