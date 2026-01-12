@@ -16,13 +16,6 @@ const page = () => {
           <div className="container">
             <div className="studio-hero-col">
               <Copy delay={0.85}>
-                <p>
-                  Building quality homes isn't just our business—it's how we build a better life for our family and community. Every project reflects our commitment to honest work and lasting relationships.
-                </p>
-              </Copy>
-            </div>
-            <div className="studio-hero-col">
-              <Copy delay={0.85}>
                 <h2>
                   BCP was established by Kabalane (Kaby) Jeneid with a goal to build a better life for his family by doing honest, high-quality work that people can rely on.
                 </h2>
@@ -30,6 +23,13 @@ const page = () => {
               <div className="studio-hero-hero-img">
                 <img src="/studio/about-hero.png" alt="Kaby Jeneid - BCP Owner" />
               </div>
+            </div>
+            <div className="studio-hero-col">
+              <Copy delay={0.85}>
+                <p>
+                  Building quality homes isn't just our business—it's how we build a better life for our family and community. Every project reflects our commitment to honest work and lasting relationships.
+                </p>
+              </Copy>
             </div>
           </div>
         </section>
