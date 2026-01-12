@@ -263,25 +263,14 @@ const Nav = () => {
                 </a>
               </div>
             </div>
-          </div>
-          <div className="col col-2">
-            <div className="socials">
-              <div className="sub-col">
-                <div className="menu-meta menu-commissions">
-                  <p>Contact Us</p>
-                  <p>bcp411@hotmail.com</p>
-                  <p>(617) 462-0608</p>
-                </div>
-                <div className="menu-cta">
-                  <a
-                    href="/consultation"
-                    className="cta-button"
-                    onClick={(e) => handleLinkClick(e, "/consultation")}
-                  >
-                    <p>Get Free Consultation</p>
-                  </a>
-                </div>
-              </div>
+            <div className="menu-cta">
+              <a
+                href="/consultation"
+                className="cta-button"
+                onClick={(e) => handleLinkClick(e, "/consultation")}
+              >
+                <p>Get Free Consultation</p>
+              </a>
             </div>
           </div>
         </div>
