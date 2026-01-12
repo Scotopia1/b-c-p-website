@@ -281,37 +281,37 @@ const ClientReviews = () => {
             <div className="client-review-img" ref={imageContainerRef}>
               <img src={clientReviewsContent[activeClient].image} alt="" />
             </div>
+            <div className="clients-list" ref={containerRef}>
+              {clientReviewsContent.map((client, index) => (
+                <div
+                  key={client.id}
+                  ref={(el) => (clientRefs.current[index] = el)}
+                  className={`client-item ${
+                    index === visualClient ? "active" : ""
+                  } ${isAnimating ? "animating" : ""}`}
+                  onClick={() => handleClientClick(index)}
+                >
+                  <div className="client-avatar">
+                    <img src={client.avatar} alt={client.name} />
+                  </div>
+                  {index === visualClient && (
+                    <div
+                      className="client-info"
+                      ref={(el) => (clientInfoRefs.current[index] = el)}
+                      style={{ opacity: 0 }}
+                    >
+                      <p className="client-name md">{client.name}</p>
+                      <p className="client-title">{client.title}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
             <div className="client-review-copy">
               <h3 ref={reviewTextRef} key={activeClient}>
                 {clientReviewsContent[activeClient].review}
               </h3>
             </div>
-          </div>
-          <div className="clients-list" ref={containerRef}>
-            {clientReviewsContent.map((client, index) => (
-              <div
-                key={client.id}
-                ref={(el) => (clientRefs.current[index] = el)}
-                className={`client-item ${
-                  index === visualClient ? "active" : ""
-                } ${isAnimating ? "animating" : ""}`}
-                onClick={() => handleClientClick(index)}
-              >
-                <div className="client-avatar">
-                  <img src={client.avatar} alt={client.name} />
-                </div>
-                {index === visualClient && (
-                  <div
-                    className="client-info"
-                    ref={(el) => (clientInfoRefs.current[index] = el)}
-                    style={{ opacity: 0 }}
-                  >
-                    <p className="client-name md">{client.name}</p>
-                    <p className="client-title">{client.title}</p>
-                  </div>
-                )}
-              </div>
-            ))}
           </div>
         </div>
       </div>
