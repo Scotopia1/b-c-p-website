@@ -1,8 +1,10 @@
 "use client";
 import { useTransitionRouter } from "next-view-transitions";
+import { useMenu } from "@/context/MenuContext";
 
 export const useViewTransition = () => {
   const router = useTransitionRouter();
+  const { setIsPageLoading } = useMenu();
 
   function slideInOut() {
     try {
@@ -52,6 +54,9 @@ export const useViewTransition = () => {
     if (currentPath === href) {
       return;
     }
+
+    // Show loading screen
+    setIsPageLoading(true);
 
     // Scroll to top before navigation
     window.scrollTo(0, 0);

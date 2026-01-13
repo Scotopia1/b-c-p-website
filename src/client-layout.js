@@ -4,28 +4,17 @@ import { usePathname } from "next/navigation";
 
 import { ReactLenis } from "lenis/react";
 import { ViewTransitions } from "next-view-transitions";
-import { MenuProvider } from "@/context/MenuContext";
+import { MenuProvider, useMenu } from "@/context/MenuContext";
+import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
 
-export default function ClientLayout({ children }) {
-  const [isMobile, setIsMobile] = useState(false);
+function LayoutContent({ children, isMobile }) {
+  const { isPageLoading, setIsPageLoading } = useMenu();
   const pathname = usePathname();
 
-  // Scroll to top on route change
+  // Hide loading screen when route changes (page loaded)
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 1000);
-    };
-
-    checkMobile();
-
-    window.addEventListener("resize", checkMobile);
-
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
+    setIsPageLoading(false);
+  }, [pathname, setIsPageLoading]);
 
   const scrollSettings = isMobile
     ? {
@@ -60,11 +49,40 @@ export default function ClientLayout({ children }) {
       };
 
   return (
+    <>
+      <LoadingScreen isLoading={isPageLoading} />
+      <ReactLenis root options={scrollSettings}>
+        {children}
+      </ReactLenis>
+    </>
+  );
+}
+
+export default function ClientLayout({ children }) {
+  const [isMobile, setIsMobile] = useState(false);
+  const pathname = usePathname();
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 1000);
+    };
+
+    checkMobile();
+
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  return (
     <ViewTransitions>
       <MenuProvider>
-        <ReactLenis root options={scrollSettings}>
-          {children}
-        </ReactLenis>
+        <LayoutContent isMobile={isMobile}>{children}</LayoutContent>
       </MenuProvider>
     </ViewTransitions>
   );

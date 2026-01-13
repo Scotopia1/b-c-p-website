@@ -7,6 +7,7 @@ export const MenuProvider = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isNavigating, setIsNavigating] = useState(false);
+  const [isPageLoading, setIsPageLoading] = useState(false);
 
   const toggleMenu = () => {
     if (!isAnimating && !isNavigating) {
@@ -23,6 +24,8 @@ export const MenuProvider = ({ children }) => {
         setIsAnimating,
         isNavigating,
         setIsNavigating,
+        isPageLoading,
+        setIsPageLoading,
         toggleMenu,
       }}
     >
