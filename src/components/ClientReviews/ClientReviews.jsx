@@ -290,6 +290,10 @@ const ClientReviews = () => {
                     index === visualClient ? "active" : ""
                   } ${isAnimating ? "animating" : ""}`}
                   onClick={() => handleClientClick(index)}
+                  onTouchEnd={(e) => {
+                    e.preventDefault();
+                    handleClientClick(index);
+                  }}
                 >
                   <div className="client-avatar">
                     <img src={client.avatar} alt={client.name} />

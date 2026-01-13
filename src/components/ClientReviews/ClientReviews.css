@@ -94,8 +94,10 @@
   transition: background-color 500ms ease-in-out;
 }
 
-.client-reviews .client-item:hover {
-  background-color: var(--base-200);
+@media (hover: hover) {
+  .client-reviews .client-item:hover {
+    background-color: var(--base-200);
+  }
 }
 
 .client-reviews .client-item.active {
